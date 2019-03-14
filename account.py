@@ -35,7 +35,7 @@ class BankAccount():
         
             
  #class instantiation
-account = BankAccount("ac23663455", "dodo" )
+account = BankAccount("ac23663455", "dodo" 0)
 account.deposit(200000)
 account.withdraw(100000)
 print("Welcome to Green bank!\nPlease select on one of the options below:")
