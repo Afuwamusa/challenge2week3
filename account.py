@@ -14,14 +14,14 @@ class BankAccount():
         print(input("enter acccount name: "))
         print(input("enter account number: "))
         print(input("enter amount to deposit: "))
-        print("you have deposited" + " " + str(deposit) + " " + "thank you for depositing with Green bank")
+        print("you have deposited" + " " + str(self.balance) + " " + "thank you for depositing with Green bank")
     def withdrawal(self,amount):
         self.balance >= amount
         self.balance -= amount
         print(input("enter account name: "))
         print(input("enter account number: "))
         print(input("enter amount to withdraw: "))
-        print("You have withdrawed" + " " + str(withdraw))
+        print("You have withdrawed" + " " + str(self.balance))
         
     def get_balance(self, amount):
         self.account_name = input("enter account name: ")
@@ -35,9 +35,9 @@ class BankAccount():
         
             
  #class instantiation
-account = BankAccount("ac23663455", "dodo" 0)
+account: BankAccount("ac23663455", "dodo" )
 account.deposit(200000)
-account.withdraw(100000)
+account.withdraw(10000)
 print("Welcome to Green bank!\nPlease select on one of the options below:")
 print("1. open an account")
 print("2.Deposit money")
